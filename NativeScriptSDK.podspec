@@ -37,8 +37,6 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "13.0"
   spec.ios.deployment_target = "13.0"
 
-  spec.vendored_frameworks = "NativeScript.xcframework"
-  
   # Include NativeScriptEmbedder source files
   spec.source_files = "Sources/**/*.{h,m,swift}"
   spec.public_header_files = "Sources/**/*.h"
