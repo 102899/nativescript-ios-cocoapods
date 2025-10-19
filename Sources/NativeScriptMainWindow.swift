@@ -1,5 +1,5 @@
 import SwiftUI
-import NativeScriptEmbedder
+import NativeScriptSDK.NativeScriptEmbedder
 import UIKit
 
 @available(iOS 14.0, *)

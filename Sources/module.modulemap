@@ -1,14 +1,16 @@
-module NativeScriptEmbedder {
-    header "NativeScriptEmbedder.h"
-    export *
-}
+framework module NativeScriptSDK {
+    umbrella header "NativeScriptSDK.h"
+    
+    module NativeScriptEmbedder {
+        header "NativeScriptEmbedder.h"
+        export *
+    }
 
-module NativeScriptUtils {
-    header "NativeScriptUtils.h"
+    module UIViewNativeScript {
+        header "UIView+NativeScript.h"
+        export *
+    }
+    
     export *
-}
-
-module UIViewNativeScript {
-    header "UIView+NativeScript.h"
-    export *
+    module * { export * }
 }
