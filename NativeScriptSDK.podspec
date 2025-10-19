@@ -43,11 +43,14 @@ Pod::Spec.new do |spec|
   spec.source_files = "Sources/**/*.{h,m,swift}"
   spec.public_header_files = "Sources/**/*.h"
   
+  # Module map for proper Swift/ObjC interop
+  spec.module_map = "Sources/module.modulemap"
+  
   spec.frameworks = "Foundation", "UIKit"
   
   spec.requires_arc = true
   
-  # Module map for proper Swift/ObjC interop
+  # Module name
   spec.module_name = "NativeScriptSDK"
   
   # Ensure the framework is properly linked
