@@ -39,6 +39,10 @@ Pod::Spec.new do |spec|
 
   spec.vendored_frameworks = "NativeScript.xcframework"
   
+  # Include NativeScriptEmbedder source files
+  spec.source_files = "Sources/**/*.{h,m,swift}"
+  spec.public_header_files = "Sources/**/*.h"
+  
   spec.frameworks = "Foundation", "UIKit"
   
   spec.requires_arc = true
